@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Kathy Suárez</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Avenir", sans-serif;
+}
+
+:root{
+    --primary:70px;
+    --secondary:35px;
+
+    --lilac:#d4c3ea;
+    --blue-soft:#eef3fa;
+    --ink:#1e2430;
+}
+
+.container{
+    width:100vw;
+    height:100vh;
+    display:flex;
+}
+
+.left{
+    width:50%;
+    background:var(--lilac);
+    padding:40px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+}
+
+.title{
+    font-size:6rem;
+    font-weight:600;
+    color:var(--ink);
+}
+
+.subtitle{
+    font-size:2rem;
+    margin-top:8px;
+    font-weight:300;
+    color:var(--ink);
+}
+.projects{
+    margin-top:20px;
+    columns:2;
+    column-gap:40px;
+}
+
+.projects h3{
+    font-size:2.5rem;
+    line-height:6rem;
+    font-weight:300;
+    color:var(--ink);
+}
+
+.right{
+    width:50%;
+    background:rgb(159, 114, 197);
+    display:flex;
+    flex-direction:column;
+}
+
+.mPair{
+    height:50%;
+    display:flex;
+}
+
+.mSquare{
+    position:relative;
+    width:50%;
+    height:100%;
+}
+
+.mSquare .top,
+.mSquare .bottom{
+    position:absolute;
+    left:var(--secondary);
+    right:var(--secondary);
+    height:var(--secondary);
+    background:var(--ink);
+}
+
+.mSquare .top{ top:0; }
+.mSquare .bottom{ bottom:0; }
+
+.mSquare .left,
+.mSquare .right{
+    position:absolute;
+    top:var(--secondary);
+    bottom:var(--secondary);
+    width:var(--secondary);
+    background:var(--ink);
+}
+
+.mSquare .left{ left:0; }
+.mSquare .right{ right:0; }
+
+.mGrid{
+    height:50%;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.mS{
+    position:relative;
+    width:50%;
+    height:50%;
+}
+
+.mS .top,
+.mS .bottom{
+    position:absolute;
+    left:var(--secondary);
+    right:var(--secondary);
+    height:var(--secondary);
+    background:var(--ink);
+}
+
+.mS .top{ top:0; }
+.mS .bottom{ bottom:0; }
+
+.mS .left,
+.mS .right{
+    position:absolute;
+    top:var(--secondary);
+    bottom:var(--secondary);
+    width:var(--secondary);
+    background:var(--ink);
+}
+
+.mS .left{ left:0; }
+.mS .right{ right:0; }
+a{
+    text-decoration:none;
+    color:#6f4fa3;               
+}
+
+a:hover{
+    text-decoration:underline;  
+    color:#5a3d8a;               
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+    <div class="left">
+        <div>
+            <h1 class="title">PORTFOLIO</h1>
+            <h2 class="subtitle">KATHY SUÁREZ</h2>
+
+            <div class="projects">
+                <h3><a class="project-link featured" href="https://kathysuarezcaizaguano.github.io/p1/">P1</a></h3>
+                <h3><a class="project-link featured" href="https://kathysuarezcaizaguano.github.io/p2/">P2</a></h3>
+                <h3><a class="project-link featured" href="https://kathysuarezcaizaguano.github.io/p3/">P3</a></h3>
+                <h3><a class="project-link featured" href="https://kathysuarezcaizaguano.github.io/p3/">P4</a></h3>
+                <h3><a class="project-link featured" href="https://kathysuarezcaizaguano.github.io/p5/">P5</a></h3>
+                <h3><a class="project-link featured" href="https://kathysuarezcaizaguano.github.io/p6/">P6</a></h3>
+                <h3><a class="project-link featured" href="https://kathysuarezcaizaguano.github.io/p7/">P7</a></h3>
+                <h3><a class="project-link featured" href="https://kathysuarezcaizaguano.github.io/p8/">P8</a></h3>
+                <h3><a class="project-link featured" href="https://kathysuarezcaizaguano.github.io/p9/">P9_1</a></h3>
+                <h3><a class="project-link featured" href="https://kathysuarezcaizaguano.github.io/p9_2">P9_2</a></h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="right">
+
+        <div class="mPair">
+            <div class="mSquare">
+                <div class="top"></div>
+                <div class="right"></div>
+                <div class="left"></div>
+                <div class="bottom"></div>
+            </div>
+
+            <div class="mSquare">
+                <div class="top"></div>
+                <div class="right"></div>
+                <div class="left"></div>
+                <div class="bottom"></div>
+            </div>
+        </div>
+
+        <div class="mGrid">
+            <div class="mS"><div class="top"></div><div class="right"></div><div class="left"></div><div class="bottom"></div></div>
+            <div class="mS"><div class="top"></div><div class="right"></div><div class="left"></div><div class="bottom"></div></div>
+            <div class="mS"><div class="top"></div><div class="right"></div><div class="left"></div><div class="bottom"></div></div>
+            <div class="mS"><div class="top"></div><div class="right"></div><div class="left"></div><div class="bottom"></div></div>
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>
